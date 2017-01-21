@@ -1,0 +1,96 @@
+安装ubuntu之后，要进行ARM linux开发需要安装一些插件
+安装步骤如下：
+1.sudo apt-get update
+2.sudo apt-get install git
+
+
+3.安装VMware-tools软件，这个是为了好让windows的东西直接复制到ubuntu下
+但是安装好的虚拟机点击---虚拟机(M)
+			 VMwaretools安装
+
+这是后安装VMwaretools会报错	正在进行简易安装时，无法手动启动 VMware Tools 安装。
+
+所以要关闭ubuntu，在虚拟机设置里面将CD/DVD --- 连接改为使用物理驱动器
+		  在虚拟机设置里面将软盘   --- 连接改为使用物理驱动器
+
+然开启ubuntu，再安装VMwaretools 就可以看见多了一个VMwaretools的目录
+
+用界面方式拷贝VMwaretools-9.6.1.tar.gz到Download目录下解压
+然后输入命令：./vmware-install.pl
+根据其提示输入yes/no，直到出现Enjoy, –the VMware team就表示安装成功了，然后手动重启虚拟机
+重启虚拟机后我们发现菜单栏 - 虚拟机 - 安装VMware Tools变成了“重新安装”字眼，这也表明VMware Tools已经安装成功了
+
+4.sudo apt-get install ssh   
+ 在ubuntu启动ssh服务，只有这样windows的文件才可以经过ssh传入ubuntu
+ 这里又几个重要的问题要处理；
+ ssh安装后要在/etc/ssh这个目录下去修改一个叫sshd_config的配置文件。如果不去修改会出现在windows下面SSH输入IP和root后无法进入输入密码界面
+   在sshd_config文件最后一行加入： 
+		Ciphers aes128-cbc,aes192-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr,3des-cbc,arcfour128,arcfour256,arcfour,blowfish-cbc,cast128-cbc
+		MACs hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-sha1-96,hmac-md5-96
+		KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group1-sha1,curve25519-sha256@libssh.org
+
+   然后修改sshd_config文件的PermitRootLogin without-password
+			    #将without-password修改为yes
+			    就改成这样了PermitRootLogin yes
+   启动service ssh restart 这样ubuntu里面的ssh服务就成功启动了。
+
+   ubuntun文件已经修改完了还要修改虚拟机的设置；将网络连接改为桥接模式，将复制物理网络连接状态打上勾。
+
+这样就可以用在windows和ubuntu之间传输文件了。
+
+5. 安装VIM
+   apt-get install vim
+
+vim 安装好之后，vimrc文件在/usr/share/vim下面和/etc/vim目录下面。
+
+5.1；vim敲打码补全功能
+  先去http://www.vim.org/scripts/script.php?script_id=1643 这个地方下载supertab.vmb到自己创建的目录
+  然后用VIM打开supertab.vmb这个文件
+  然后让VIM进入浏览模式， 在低栏输入:UseVimball  记住冒号要输入
+  然后VIM界面底部就会打印Press ENTER or type command to continue
+  然后再/usr/share/vim目录下打开vimrc 在最后一行输入 let g:SuperTabDefaultCompletionType="context"
+  然后就可以在敲代码的过程中用tab键补全了。
+
+5.2； 在vimrc 加入一行set number  这样每次打开vim都要显示行号
+
+5.3：VIM插件管理Vundle
+  这个管理软件可以帮你安装更多的VIM插件，你就不需要这么麻烦了。	
+  mkdir -p ~/.vim/bundle 在root目录下创建一个隐藏的.vim文件
+  
+  cd  ~/.vim/bundle
+  git clone https://github.com/gmarik/Vundle.vim.git  //下载vundle
+  
+  然后再vimrc最后一行加入Vundle框架
+  		set nocompatible			//这个不要写错了
+		filetype off				//这个也不要写错了			   
+		set rtp+=~/.vim/bundle/Vundle.vim	//这个是安装好Vundle的路径，一定要写对
+		call vundle#begin()			//这个一定要写对，网上图灵社区的文档就是写了这个的，自己很容易看错把begin看end
+		Plugin 'gmarik/Vundle.vim'		//这个是要下载的软件
+		Plugin 'scrooloose/syntastic'		//这个是语法错误高亮插件
+		Plugin 'jiangmiao/auto-pairs'		//这个是括号补全插件
+		Plugin 'scrooloose/nerdcommenter'	//快捷注释功能-------------比如\cc注释一行，\cu退出这行注释，\ca注释三行还有个*号，自己试
+		call vundle#end()			//这个是结束，记住这个规则
+  		filetype plugin indent on		//这个不要写错了
+
+  然后保存退出vimrc，在命令行输入vim回车，进入命令模式输入:PluginInstall，注意大小写，然后就是等待vim文本左下角显示Done！
+
+
+5.4：Nerdtree这个是vim文件浏览器，这个加上后看起来就像个IDE了
+  这是nerdtree压缩包下载地址http://www.vim.org/scripts/script.php?script_id=1658  
+  下载版本是4.2.0的2011-12-28  不要下载最新的5.0.0 2015年的，因为5.0.0用在vim上vim打开会出问题而且功能无法实现
+  将下载的压缩包放在创建的目录里面解压
+  然后将plugin和doc目录里面的两个文件拷贝到root目录里面的.vim中 ~/.vim/plugin  ~/.vim/doc
+  然后在vimrc中设置快捷键打开Nerdtree，这样是为了方便每次打开vim都要去命令模式下输入nerdtree这种麻烦事
+  所以在vimrc 中加入   map <F3> :NERDTreeMirror<CR>
+		       map <F3> :NERDTreeToggle<CR>
+  
+
+
+5.6:vim编译错误信息快捷查找
+   QuickFix 窗口可以再本文件下开一个窗口来看错误的行数
+   编辑完c文件后，让vim进入命令行输入 :cw 就可以看到编译错误信息了，如果编译没有出错，按:cw是不会显示的。
+   快捷键设置，在vimrc里面加：
+			   map <F3> :cw<cr>   //打开编译错误窗口，记住编译正确通过是打不开该窗口的，所以按:cw无效，只有编译有错误才能打开该窗口
+			   map <F4> :cn<cr>  //切换到下一个
+      			   map <F5> :cp<cr> //切换到上一个
+												
