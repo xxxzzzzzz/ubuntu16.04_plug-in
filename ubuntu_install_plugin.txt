@@ -1,96 +1,104 @@
-°²×°ubuntuÖ®ºó£¬Òª½øĞĞARM linux¿ª·¢ĞèÒª°²×°Ò»Ğ©²å¼ş
-°²×°²½ÖèÈçÏÂ£º
+å®‰è£…ubuntuä¹‹åï¼Œè¦è¿›è¡ŒARM linuxå¼€å‘éœ€è¦å®‰è£…ä¸€äº›æ’ä»¶
+å®‰è£…æ­¥éª¤å¦‚ä¸‹ï¼š
 1.sudo apt-get update
 2.sudo apt-get install git
 
 
-3.°²×°VMware-toolsÈí¼ş£¬Õâ¸öÊÇÎªÁËºÃÈÃwindowsµÄ¶«Î÷Ö±½Ó¸´ÖÆµ½ubuntuÏÂ
-µ«ÊÇ°²×°ºÃµÄĞéÄâ»úµã»÷---ĞéÄâ»ú(M)
-			 VMwaretools°²×°
+3.å®‰è£…VMware-toolsè½¯ä»¶ï¼Œè¿™ä¸ªæ˜¯ä¸ºäº†å¥½è®©windowsçš„ä¸œè¥¿ç›´æ¥å¤åˆ¶åˆ°ubuntuä¸‹
+ä½†æ˜¯å®‰è£…å¥½çš„è™šæ‹Ÿæœºç‚¹å‡»---è™šæ‹Ÿæœº(M)
+			 VMwaretoolså®‰è£…
 
-ÕâÊÇºó°²×°VMwaretools»á±¨´í	ÕıÔÚ½øĞĞ¼òÒ×°²×°Ê±£¬ÎŞ·¨ÊÖ¶¯Æô¶¯ VMware Tools °²×°¡£
+è¿™æ˜¯åå®‰è£…VMwaretoolsä¼šæŠ¥é”™	æ­£åœ¨è¿›è¡Œç®€æ˜“å®‰è£…æ—¶ï¼Œæ— æ³•æ‰‹åŠ¨å¯åŠ¨ VMware Tools å®‰è£…ã€‚
 
-ËùÒÔÒª¹Ø±Õubuntu£¬ÔÚĞéÄâ»úÉèÖÃÀïÃæ½«CD/DVD --- Á¬½Ó¸ÄÎªÊ¹ÓÃÎïÀíÇı¶¯Æ÷
-		  ÔÚĞéÄâ»úÉèÖÃÀïÃæ½«ÈíÅÌ   --- Á¬½Ó¸ÄÎªÊ¹ÓÃÎïÀíÇı¶¯Æ÷
+æ‰€ä»¥è¦å…³é—­ubuntuï¼Œåœ¨è™šæ‹Ÿæœºè®¾ç½®é‡Œé¢å°†CD/DVD --- è¿æ¥æ”¹ä¸ºä½¿ç”¨ç‰©ç†é©±åŠ¨å™¨
+		  åœ¨è™šæ‹Ÿæœºè®¾ç½®é‡Œé¢å°†è½¯ç›˜   --- è¿æ¥æ”¹ä¸ºä½¿ç”¨ç‰©ç†é©±åŠ¨å™¨
 
-È»¿ªÆôubuntu£¬ÔÙ°²×°VMwaretools ¾Í¿ÉÒÔ¿´¼û¶àÁËÒ»¸öVMwaretoolsµÄÄ¿Â¼
+ç„¶å¼€å¯ubuntuï¼Œå†å®‰è£…VMwaretools å°±å¯ä»¥çœ‹è§å¤šäº†ä¸€ä¸ªVMwaretoolsçš„ç›®å½•
 
-ÓÃ½çÃæ·½Ê½¿½±´VMwaretools-9.6.1.tar.gzµ½DownloadÄ¿Â¼ÏÂ½âÑ¹
-È»ºóÊäÈëÃüÁî£º./vmware-install.pl
-¸ù¾İÆäÌáÊ¾ÊäÈëyes/no£¬Ö±µ½³öÏÖEnjoy, ¨Cthe VMware team¾Í±íÊ¾°²×°³É¹¦ÁË£¬È»ºóÊÖ¶¯ÖØÆôĞéÄâ»ú
-ÖØÆôĞéÄâ»úºóÎÒÃÇ·¢ÏÖ²Ëµ¥À¸ - ĞéÄâ»ú - °²×°VMware Tools±ä³ÉÁË¡°ÖØĞÂ°²×°¡±×ÖÑÛ£¬ÕâÒ²±íÃ÷VMware ToolsÒÑ¾­°²×°³É¹¦ÁË
+ç”¨ç•Œé¢æ–¹å¼æ‹·è´VMwaretools-9.6.1.tar.gzåˆ°Downloadç›®å½•ä¸‹è§£å‹
+ç„¶åè¾“å…¥å‘½ä»¤ï¼š./vmware-install.pl
+æ ¹æ®å…¶æç¤ºè¾“å…¥yes/noï¼Œç›´åˆ°å‡ºç°Enjoy, â€“the VMware teamå°±è¡¨ç¤ºå®‰è£…æˆåŠŸäº†ï¼Œç„¶åæ‰‹åŠ¨é‡å¯è™šæ‹Ÿæœº
+é‡å¯è™šæ‹Ÿæœºåæˆ‘ä»¬å‘ç°èœå•æ  - è™šæ‹Ÿæœº - å®‰è£…VMware Toolså˜æˆäº†â€œé‡æ–°å®‰è£…â€å­—çœ¼ï¼Œè¿™ä¹Ÿè¡¨æ˜VMware Toolså·²ç»å®‰è£…æˆåŠŸäº†
 
 4.sudo apt-get install ssh   
- ÔÚubuntuÆô¶¯ssh·şÎñ£¬Ö»ÓĞÕâÑùwindowsµÄÎÄ¼ş²Å¿ÉÒÔ¾­¹ıssh´«Èëubuntu
- ÕâÀïÓÖ¼¸¸öÖØÒªµÄÎÊÌâÒª´¦Àí£»
- ssh°²×°ºóÒªÔÚ/etc/sshÕâ¸öÄ¿Â¼ÏÂÈ¥ĞŞ¸ÄÒ»¸ö½Ğsshd_configµÄÅäÖÃÎÄ¼ş¡£Èç¹û²»È¥ĞŞ¸Ä»á³öÏÖÔÚwindowsÏÂÃæSSHÊäÈëIPºÍrootºóÎŞ·¨½øÈëÊäÈëÃÜÂë½çÃæ
-   ÔÚsshd_configÎÄ¼ş×îºóÒ»ĞĞ¼ÓÈë£º 
+ åœ¨ubuntuå¯åŠ¨sshæœåŠ¡ï¼Œåªæœ‰è¿™æ ·windowsçš„æ–‡ä»¶æ‰å¯ä»¥ç»è¿‡sshä¼ å…¥ubuntu
+ è¿™é‡Œåˆå‡ ä¸ªé‡è¦çš„é—®é¢˜è¦å¤„ç†ï¼›
+ sshå®‰è£…åè¦åœ¨/etc/sshè¿™ä¸ªç›®å½•ä¸‹å»ä¿®æ”¹ä¸€ä¸ªå«sshd_configçš„é…ç½®æ–‡ä»¶ã€‚å¦‚æœä¸å»ä¿®æ”¹ä¼šå‡ºç°åœ¨windowsä¸‹é¢SSHè¾“å…¥IPå’Œrootåæ— æ³•è¿›å…¥è¾“å…¥å¯†ç ç•Œé¢
+   åœ¨sshd_configæ–‡ä»¶æœ€åä¸€è¡ŒåŠ å…¥ï¼š 
 		Ciphers aes128-cbc,aes192-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr,3des-cbc,arcfour128,arcfour256,arcfour,blowfish-cbc,cast128-cbc
 		MACs hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-sha1-96,hmac-md5-96
 		KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group1-sha1,curve25519-sha256@libssh.org
 
-   È»ºóĞŞ¸Ässhd_configÎÄ¼şµÄPermitRootLogin without-password
-			    #½«without-passwordĞŞ¸ÄÎªyes
-			    ¾Í¸Ä³ÉÕâÑùÁËPermitRootLogin yes
-   Æô¶¯service ssh restart ÕâÑùubuntuÀïÃæµÄssh·şÎñ¾Í³É¹¦Æô¶¯ÁË¡£
+   ç„¶åä¿®æ”¹sshd_configæ–‡ä»¶çš„PermitRootLogin without-password
+			    #å°†without-passwordä¿®æ”¹ä¸ºyes
+			    å°±æ”¹æˆè¿™æ ·äº†PermitRootLogin yes
+   å¯åŠ¨service ssh restart è¿™æ ·ubuntué‡Œé¢çš„sshæœåŠ¡å°±æˆåŠŸå¯åŠ¨äº†ã€‚
 
-   ubuntunÎÄ¼şÒÑ¾­ĞŞ¸ÄÍêÁË»¹ÒªĞŞ¸ÄĞéÄâ»úµÄÉèÖÃ£»½«ÍøÂçÁ¬½Ó¸ÄÎªÇÅ½ÓÄ£Ê½£¬½«¸´ÖÆÎïÀíÍøÂçÁ¬½Ó×´Ì¬´òÉÏ¹´¡£
+ Â  ubuntunæ–‡ä»¶å·²ç»ä¿®æ”¹å®Œäº†è¿˜è¦ä¿®æ”¹è™šæ‹Ÿæœºçš„è®¾ç½®ï¼›å°†ç½‘ç»œè¿æ¥æ”¹ä¸ºæ¡¥æ¥æ¨¡å¼ï¼Œå°†å¤åˆ¶ç‰©ç†ç½‘ç»œè¿æ¥çŠ¶æ€æ‰“ä¸Šå‹¾ã€‚
+   
+5ä½†æ˜¯ Â åœ¨ubuntu14.04Devæ—¶å€™å®‰è£…sshæœ‰ç‚¹ä¸ä¸€æ · 
+5.1 sudo apt-get install ssh
+5.2ä¿®æ”¹/etc/sshè¿™ä¸ªç›®å½•ä¸‹çš„sshd_config
+å±è”½"PermitRootLogin without-password"
+ä¿®æ”¹PermitRootLogin ä¸ºyes
+ä½¿ç”¨/etc/init.d/ssh startæ²¡æœ‰å¯åŠ¨èµ·sshæœåŠ¡çš„è¯ï¼Œç”¨ps -e | grep sshæŸ¥çœ‹sshæ˜¯å¦è¢«å¯åŠ¨
+å°±æ‰‹åŠ¨å¯åŠ¨/usr/sbin/sshd å†æŸ¥çœ‹
 
-ÕâÑù¾Í¿ÉÒÔÓÃÔÚwindowsºÍubuntuÖ®¼ä´«ÊäÎÄ¼şÁË¡£
+è¿™æ ·å°±å¯ä»¥ç”¨åœ¨windowså’Œubuntuä¹‹é—´ä¼ è¾“æ–‡ä»¶äº†ã€‚
 
-5. °²×°VIM
+5. å®‰è£…VIM
    apt-get install vim
 
-vim °²×°ºÃÖ®ºó£¬vimrcÎÄ¼şÔÚ/usr/share/vimÏÂÃæºÍ/etc/vimÄ¿Â¼ÏÂÃæ¡£
+vim å®‰è£…å¥½ä¹‹åï¼Œvimrcæ–‡ä»¶åœ¨/usr/share/vimä¸‹é¢å’Œ/etc/vimç›®å½•ä¸‹é¢ã€‚
 
-5.1£»vimÇÃ´òÂë²¹È«¹¦ÄÜ
-  ÏÈÈ¥http://www.vim.org/scripts/script.php?script_id=1643 Õâ¸öµØ·½ÏÂÔØsupertab.vmbµ½×Ô¼º´´½¨µÄÄ¿Â¼
-  È»ºóÓÃVIM´ò¿ªsupertab.vmbÕâ¸öÎÄ¼ş
-  È»ºóÈÃVIM½øÈëä¯ÀÀÄ£Ê½£¬ ÔÚµÍÀ¸ÊäÈë:UseVimball  ¼Ç×¡Ã°ºÅÒªÊäÈë
-  È»ºóVIM½çÃæµ×²¿¾Í»á´òÓ¡Press ENTER or type command to continue
-  È»ºóÔÙ/usr/share/vimÄ¿Â¼ÏÂ´ò¿ªvimrc ÔÚ×îºóÒ»ĞĞÊäÈë let g:SuperTabDefaultCompletionType="context"
-  È»ºó¾Í¿ÉÒÔÔÚÇÃ´úÂëµÄ¹ı³ÌÖĞÓÃtab¼ü²¹È«ÁË¡£
+5.1ï¼›vimæ•²æ‰“ç è¡¥å…¨åŠŸèƒ½
+  å…ˆå»http://www.vim.org/scripts/script.php?script_id=1643 è¿™ä¸ªåœ°æ–¹ä¸‹è½½supertab.vmbåˆ°è‡ªå·±åˆ›å»ºçš„ç›®å½•
+  ç„¶åç”¨VIMæ‰“å¼€supertab.vmbè¿™ä¸ªæ–‡ä»¶
+  ç„¶åè®©VIMè¿›å…¥æµè§ˆæ¨¡å¼ï¼Œ åœ¨ä½æ è¾“å…¥:UseVimball  è®°ä½å†’å·è¦è¾“å…¥
+  ç„¶åVIMç•Œé¢åº•éƒ¨å°±ä¼šæ‰“å°Press ENTER or type command to continue
+  ç„¶åå†/usr/share/vimç›®å½•ä¸‹æ‰“å¼€vimrc åœ¨æœ€åä¸€è¡Œè¾“å…¥ let g:SuperTabDefaultCompletionType="context"
+  ç„¶åå°±å¯ä»¥åœ¨æ•²ä»£ç çš„è¿‡ç¨‹ä¸­ç”¨tabé”®è¡¥å…¨äº†ã€‚
 
-5.2£» ÔÚvimrc ¼ÓÈëÒ»ĞĞset number  ÕâÑùÃ¿´Î´ò¿ªvim¶¼ÒªÏÔÊ¾ĞĞºÅ
+5.2ï¼› åœ¨vimrc åŠ å…¥ä¸€è¡Œset number  è¿™æ ·æ¯æ¬¡æ‰“å¼€viméƒ½è¦æ˜¾ç¤ºè¡Œå·
 
-5.3£ºVIM²å¼ş¹ÜÀíVundle
-  Õâ¸ö¹ÜÀíÈí¼ş¿ÉÒÔ°ïÄã°²×°¸ü¶àµÄVIM²å¼ş£¬Äã¾Í²»ĞèÒªÕâÃ´Âé·³ÁË¡£	
-  mkdir -p ~/.vim/bundle ÔÚrootÄ¿Â¼ÏÂ´´½¨Ò»¸öÒş²ØµÄ.vimÎÄ¼ş
+5.3ï¼šVIMæ’ä»¶ç®¡ç†Vundle
+  è¿™ä¸ªç®¡ç†è½¯ä»¶å¯ä»¥å¸®ä½ å®‰è£…æ›´å¤šçš„VIMæ’ä»¶ï¼Œä½ å°±ä¸éœ€è¦è¿™ä¹ˆéº»çƒ¦äº†ã€‚	
+  mkdir -p ~/.vim/bundle åœ¨rootç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªéšè—çš„.vimæ–‡ä»¶
   
   cd  ~/.vim/bundle
-  git clone https://github.com/gmarik/Vundle.vim.git  //ÏÂÔØvundle
+  git clone https://github.com/gmarik/Vundle.vim.git  //ä¸‹è½½vundle
   
-  È»ºóÔÙvimrc×îºóÒ»ĞĞ¼ÓÈëVundle¿ò¼Ü
-  		set nocompatible			//Õâ¸ö²»ÒªĞ´´íÁË
-		filetype off				//Õâ¸öÒ²²»ÒªĞ´´íÁË			   
-		set rtp+=~/.vim/bundle/Vundle.vim	//Õâ¸öÊÇ°²×°ºÃVundleµÄÂ·¾¶£¬Ò»¶¨ÒªĞ´¶Ô
-		call vundle#begin()			//Õâ¸öÒ»¶¨ÒªĞ´¶Ô£¬ÍøÉÏÍ¼ÁéÉçÇøµÄÎÄµµ¾ÍÊÇĞ´ÁËÕâ¸öµÄ£¬×Ô¼ººÜÈİÒ×¿´´í°Ñbegin¿´end
-		Plugin 'gmarik/Vundle.vim'		//Õâ¸öÊÇÒªÏÂÔØµÄÈí¼ş
-		Plugin 'scrooloose/syntastic'		//Õâ¸öÊÇÓï·¨´íÎó¸ßÁÁ²å¼ş
-		Plugin 'jiangmiao/auto-pairs'		//Õâ¸öÊÇÀ¨ºÅ²¹È«²å¼ş
-		Plugin 'scrooloose/nerdcommenter'	//¿ì½İ×¢ÊÍ¹¦ÄÜ-------------±ÈÈç\cc×¢ÊÍÒ»ĞĞ£¬\cuÍË³öÕâĞĞ×¢ÊÍ£¬\ca×¢ÊÍÈıĞĞ»¹ÓĞ¸ö*ºÅ£¬×Ô¼ºÊÔ
-		call vundle#end()			//Õâ¸öÊÇ½áÊø£¬¼Ç×¡Õâ¸ö¹æÔò
-  		filetype plugin indent on		//Õâ¸ö²»ÒªĞ´´íÁË
+  ç„¶åå†vimrcæœ€åä¸€è¡ŒåŠ å…¥Vundleæ¡†æ¶
+  		set nocompatible			//è¿™ä¸ªä¸è¦å†™é”™äº†
+		filetype off				//è¿™ä¸ªä¹Ÿä¸è¦å†™é”™äº†			   
+		set rtp+=~/.vim/bundle/Vundle.vim	//è¿™ä¸ªæ˜¯å®‰è£…å¥½Vundleçš„è·¯å¾„ï¼Œä¸€å®šè¦å†™å¯¹
+		call vundle#begin()			//è¿™ä¸ªä¸€å®šè¦å†™å¯¹ï¼Œç½‘ä¸Šå›¾çµç¤¾åŒºçš„æ–‡æ¡£å°±æ˜¯å†™äº†è¿™ä¸ªçš„ï¼Œè‡ªå·±å¾ˆå®¹æ˜“çœ‹é”™æŠŠbeginçœ‹end
+		Plugin 'gmarik/Vundle.vim'		//è¿™ä¸ªæ˜¯è¦ä¸‹è½½çš„è½¯ä»¶
+		Plugin 'scrooloose/syntastic'		//è¿™ä¸ªæ˜¯è¯­æ³•é”™è¯¯é«˜äº®æ’ä»¶
+		Plugin 'jiangmiao/auto-pairs'		//è¿™ä¸ªæ˜¯æ‹¬å·è¡¥å…¨æ’ä»¶
+		Plugin 'scrooloose/nerdcommenter'	//å¿«æ·æ³¨é‡ŠåŠŸèƒ½-------------æ¯”å¦‚\ccæ³¨é‡Šä¸€è¡Œï¼Œ\cué€€å‡ºè¿™è¡Œæ³¨é‡Šï¼Œ\caæ³¨é‡Šä¸‰è¡Œè¿˜æœ‰ä¸ª*å·ï¼Œè‡ªå·±è¯•
+		call vundle#end()			//è¿™ä¸ªæ˜¯ç»“æŸï¼Œè®°ä½è¿™ä¸ªè§„åˆ™
+  		filetype plugin indent on		//è¿™ä¸ªä¸è¦å†™é”™äº†
 
-  È»ºó±£´æÍË³övimrc£¬ÔÚÃüÁîĞĞÊäÈëvim»Ø³µ£¬½øÈëÃüÁîÄ£Ê½ÊäÈë:PluginInstall£¬×¢Òâ´óĞ¡Ğ´£¬È»ºó¾ÍÊÇµÈ´ıvimÎÄ±¾×óÏÂ½ÇÏÔÊ¾Done£¡
+  ç„¶åä¿å­˜é€€å‡ºvimrcï¼Œåœ¨å‘½ä»¤è¡Œè¾“å…¥vimå›è½¦ï¼Œè¿›å…¥å‘½ä»¤æ¨¡å¼è¾“å…¥:PluginInstallï¼Œæ³¨æ„å¤§å°å†™ï¼Œç„¶åå°±æ˜¯ç­‰å¾…vimæ–‡æœ¬å·¦ä¸‹è§’æ˜¾ç¤ºDoneï¼
 
 
-5.4£ºNerdtreeÕâ¸öÊÇvimÎÄ¼şä¯ÀÀÆ÷£¬Õâ¸ö¼ÓÉÏºó¿´ÆğÀ´¾ÍÏñ¸öIDEÁË
-  ÕâÊÇnerdtreeÑ¹Ëõ°üÏÂÔØµØÖ·http://www.vim.org/scripts/script.php?script_id=1658  
-  ÏÂÔØ°æ±¾ÊÇ4.2.0µÄ2011-12-28  ²»ÒªÏÂÔØ×îĞÂµÄ5.0.0 2015ÄêµÄ£¬ÒòÎª5.0.0ÓÃÔÚvimÉÏvim´ò¿ª»á³öÎÊÌâ¶øÇÒ¹¦ÄÜÎŞ·¨ÊµÏÖ
-  ½«ÏÂÔØµÄÑ¹Ëõ°ü·ÅÔÚ´´½¨µÄÄ¿Â¼ÀïÃæ½âÑ¹
-  È»ºó½«pluginºÍdocÄ¿Â¼ÀïÃæµÄÁ½¸öÎÄ¼ş¿½±´µ½rootÄ¿Â¼ÀïÃæµÄ.vimÖĞ ~/.vim/plugin  ~/.vim/doc
-  È»ºóÔÚvimrcÖĞÉèÖÃ¿ì½İ¼ü´ò¿ªNerdtree£¬ÕâÑùÊÇÎªÁË·½±ãÃ¿´Î´ò¿ªvim¶¼ÒªÈ¥ÃüÁîÄ£Ê½ÏÂÊäÈënerdtreeÕâÖÖÂé·³ÊÂ
-  ËùÒÔÔÚvimrc ÖĞ¼ÓÈë   map <F3> :NERDTreeMirror<CR>
+5.4ï¼šNerdtreeè¿™ä¸ªæ˜¯vimæ–‡ä»¶æµè§ˆå™¨ï¼Œè¿™ä¸ªåŠ ä¸Šåçœ‹èµ·æ¥å°±åƒä¸ªIDEäº†
+  è¿™æ˜¯nerdtreeå‹ç¼©åŒ…ä¸‹è½½åœ°å€http://www.vim.org/scripts/script.php?script_id=1658  
+  ä¸‹è½½ç‰ˆæœ¬æ˜¯4.2.0çš„2011-12-28  ä¸è¦ä¸‹è½½æœ€æ–°çš„5.0.0 2015å¹´çš„ï¼Œå› ä¸º5.0.0ç”¨åœ¨vimä¸Švimæ‰“å¼€ä¼šå‡ºé—®é¢˜è€Œä¸”åŠŸèƒ½æ— æ³•å®ç°
+  å°†ä¸‹è½½çš„å‹ç¼©åŒ…æ”¾åœ¨åˆ›å»ºçš„ç›®å½•é‡Œé¢è§£å‹
+  ç„¶åå°†pluginå’Œdocç›®å½•é‡Œé¢çš„ä¸¤ä¸ªæ–‡ä»¶æ‹·è´åˆ°rootç›®å½•é‡Œé¢çš„.vimä¸­ ~/.vim/plugin  ~/.vim/doc
+  ç„¶ååœ¨vimrcä¸­è®¾ç½®å¿«æ·é”®æ‰“å¼€Nerdtreeï¼Œè¿™æ ·æ˜¯ä¸ºäº†æ–¹ä¾¿æ¯æ¬¡æ‰“å¼€viméƒ½è¦å»å‘½ä»¤æ¨¡å¼ä¸‹è¾“å…¥nerdtreeè¿™ç§éº»çƒ¦äº‹
+  æ‰€ä»¥åœ¨vimrc ä¸­åŠ å…¥   map <F3> :NERDTreeMirror<CR>
 		       map <F3> :NERDTreeToggle<CR>
   
 
 
-5.6:vim±àÒë´íÎóĞÅÏ¢¿ì½İ²éÕÒ
-   QuickFix ´°¿Ú¿ÉÒÔÔÙ±¾ÎÄ¼şÏÂ¿ªÒ»¸ö´°¿ÚÀ´¿´´íÎóµÄĞĞÊı
-   ±à¼­ÍêcÎÄ¼şºó£¬ÈÃvim½øÈëÃüÁîĞĞÊäÈë :cw ¾Í¿ÉÒÔ¿´µ½±àÒë´íÎóĞÅÏ¢ÁË£¬Èç¹û±àÒëÃ»ÓĞ³ö´í£¬°´:cwÊÇ²»»áÏÔÊ¾µÄ¡£
-   ¿ì½İ¼üÉèÖÃ£¬ÔÚvimrcÀïÃæ¼Ó£º
-			   map <F3> :cw<cr>   //´ò¿ª±àÒë´íÎó´°¿Ú£¬¼Ç×¡±àÒëÕıÈ·Í¨¹ıÊÇ´ò²»¿ª¸Ã´°¿ÚµÄ£¬ËùÒÔ°´:cwÎŞĞ§£¬Ö»ÓĞ±àÒëÓĞ´íÎó²ÅÄÜ´ò¿ª¸Ã´°¿Ú
-			   map <F4> :cn<cr>  //ÇĞ»»µ½ÏÂÒ»¸ö
-      			   map <F5> :cp<cr> //ÇĞ»»µ½ÉÏÒ»¸ö
+5.6:vimç¼–è¯‘é”™è¯¯ä¿¡æ¯å¿«æ·æŸ¥æ‰¾
+   QuickFix çª—å£å¯ä»¥å†æœ¬æ–‡ä»¶ä¸‹å¼€ä¸€ä¸ªçª—å£æ¥çœ‹é”™è¯¯çš„è¡Œæ•°
+   ç¼–è¾‘å®Œcæ–‡ä»¶åï¼Œè®©vimè¿›å…¥å‘½ä»¤è¡Œè¾“å…¥ :cw å°±å¯ä»¥çœ‹åˆ°ç¼–è¯‘é”™è¯¯ä¿¡æ¯äº†ï¼Œå¦‚æœç¼–è¯‘æ²¡æœ‰å‡ºé”™ï¼ŒæŒ‰:cwæ˜¯ä¸ä¼šæ˜¾ç¤ºçš„ã€‚
+   å¿«æ·é”®è®¾ç½®ï¼Œåœ¨vimrcé‡Œé¢åŠ ï¼š
+			   map <F3> :cw<cr>   //æ‰“å¼€ç¼–è¯‘é”™è¯¯çª—å£ï¼Œè®°ä½ç¼–è¯‘æ­£ç¡®é€šè¿‡æ˜¯æ‰“ä¸å¼€è¯¥çª—å£çš„ï¼Œæ‰€ä»¥æŒ‰:cwæ— æ•ˆï¼Œåªæœ‰ç¼–è¯‘æœ‰é”™è¯¯æ‰èƒ½æ‰“å¼€è¯¥çª—å£
+			   map <F4> :cn<cr>  //åˆ‡æ¢åˆ°ä¸‹ä¸€ä¸ª
+      			   map <F5> :cp<cr> //åˆ‡æ¢åˆ°ä¸Šä¸€ä¸ª
 												
