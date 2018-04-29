@@ -93,7 +93,40 @@ vim 安装好之后，vimrc文件在/usr/share/vim下面和/etc/vim目录下面�
 		       map <F3> :NERDTreeToggle<CR>
   
 
+5.5vim状态栏设置，就是在vim底部显示装B的信息
+在~/.vim/bundle下载 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+在~/.vimrc中的call vundle#begin()下添加Plugin 'vim-airline'
+打开vim在命令模式下输入:VundleInstall
+在vimrc中最后一行设置set laststatus=2
+然后你用你的vim打开任何文件，底部就会显示一行状态
 
+5.6安装taglist 可以在侧边栏中显示你建立的函数和全局的东西
+去网站http://www.vim.org/scripts/script.php?script_id=273 下载压缩包
+然后解压taglist_46.zip压缩包，会生成doc和plugin文件
+将doc文件的内容和plugin文件的内容拷贝到~/.vim/doc和~/.vim/plugin
+进入~/.vim/doc目录，在Vim下运行:helptags 命令
+然后在vimrc最后几行加入:
+let Tlist_Show_One_File=1     "不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow=1   "如果taglist窗口是最后一个窗口，则退出vim
+然后用vim打开c文件发现有个报错Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not 
+这个报错是因为没有安装ctags
+sudo apt-get install ctags 
+然后就可以用vim正常打开文件了，然后在vim命令行输入:Tlist就打开函数全局东西统计栏了
+在vimrc 设置 map <F3> :Tlist<CR>  这样你按F3就可以快速打开快速关闭
+Tlist侧栏快捷键使用:
+	+  打开一个折叠
+	-  将tag折叠起来
+	x 只看Tlist窗口，不看代码窗口。也可以按x调整回来
+
+
+5.7给vim打开的代码增加光标行高亮功能
+在virmc最后一行增加set cursorcolumn 列高亮
+		set cursorline   行高亮
+但是发现不是很好看，我们再增加点配色	
+在vimrc最后一行增加 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+		highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+		
+		
 5.6:vim编译错误信息快捷查找
    QuickFix 窗口可以再本文件下开一个窗口来看错误的行数
    编辑完c文件后，让vim进入命令行输入 :cw 就可以看到编译错误信息了，如果编译没有出错，按:cw是不会显示的。
