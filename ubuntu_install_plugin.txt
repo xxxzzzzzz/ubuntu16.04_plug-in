@@ -121,7 +121,7 @@ Tlist侧栏快捷键使用:
 所以我在vimrc加上一句let Tlist_Use_Right_Window = 1 然后Tlist打开后显示在窗口右边
 
 
-5.7给vim打开的代码增加光标行高亮功能
+5.6给vim打开的代码增加光标行高亮功能
 在virmc最后一行增加set cursorcolumn 列高亮
 		set cursorline   行高亮
 但是发现不是很好看，我们再增加点配色	
@@ -131,11 +131,20 @@ Tlist侧栏快捷键使用:
 highlight CursorLine    cterm=NONE ctermbg=black
 		
 		
-5.6:vim编译错误信息快捷查找
+5.7:vim编译错误信息快捷查找
    QuickFix 窗口可以再本文件下开一个窗口来看错误的行数
    编辑完c文件后，让vim进入命令行输入 :cw 就可以看到编译错误信息了，如果编译没有出错，按:cw是不会显示的。
    快捷键设置，在vimrc里面加：
 			   map <F3> :cw<cr>   //打开编译错误窗口，记住编译正确通过是打不开该窗口的，所以按:cw无效，只有编译有错误才能打开该窗口
 			   map <F4> :cn<cr>  //切换到下一个
       			   map <F5> :cp<cr> //切换到上一个
-												
+
+
+5.8 vim vim-expand-region插件解决数行数复制代码的困局
+在vimrc里面下载工具call vundle#begin()下加入 Plugin 'terryma/vim-expand-region' 然后保存退出
+打开vim 命令行模式下输入:PluginInstall 安装插件
+然后在vimrc最后几行加入 vmap v <Plug>(expand_region_expand)  这其实就是设置选择区域的快捷键
+			vmap V <Plug>(expand_region_shrink)
+然后打开C代码 按下小写v开始用上下左右键选择区域，然后按一下y就可以复制你选择的区域，然后你再找合适的区域按p粘贴
+
+
