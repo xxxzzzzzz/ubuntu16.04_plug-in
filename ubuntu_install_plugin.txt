@@ -149,3 +149,34 @@ highlight CursorLine    cterm=NONE ctermbg=black
 
 5.9解决vim移动光标靠键盘的问题，我现在使vim移动光标靠鼠标
 在vimrc里面最后一行增加 set mouse=a  但是同时失去了鼠标右键复制功能，所以建议不要设置鼠标模式
+
+5.10 rainbow插件，使vim编写代码的时候不同括号用不同颜色区分 
+cd ~/.vim/bundle
+git clone https://github.com/luochen1990/rainbow --depth=1
+将~/.vim/bundle/rainbow/plugin目录下的rainbow.vim 拷贝到~/.vim/plugin 目录下，
+然后进入vimrc
+let g:rainbow_active = 1
+let g:rainbow_operators=2 
+let g:rainbow_conf = {
+            \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+            \   'ctermfgs': ['lightgray', 'lightblue', 'lightmagenta', 'lightcyan'],
+            \   'operators': '_,_',
+            \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+            \   'separately': {
+            \       '*': {},
+            \       'lisp': {
+            \           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+            \           'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta', 'darkcyan', 'darkred', 'darkgreen'],
+            \       },
+            \       'vim': {
+            \           'parentheses': [['fu\w* \s*.*)','endfu\w*'], ['for','endfor'], ['while', 'endwhile'],
+	    \['if','_elseif\|else_','endif'], ['(',')'], ['\[','\]'], ['{','}']],
+            \       },
+            \       'tex': {
+            \           'parentheses': [['(',')'], ['\[','\]'], ['\\begin{.*}','\\end{.*}']],
+            \       },
+            \       'css': 0,
+            \       'stylus': 0,
+            \   }
+            \}
+配置vimrc完成，用vim打开C文件就可以看到括号变化了
