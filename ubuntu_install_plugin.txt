@@ -180,3 +180,11 @@ let g:rainbow_conf = {
             \   }
             \}
 配置vimrc完成，用vim打开C文件就可以看到括号变化了
+
+5.11 VIM配置代码tab线，让代码结构看起更清晰
+进入vimrc
+set list
+set lcs=tab:\|\ ,nbsp:%
+highlight LeaderTab  ctermfg=238
+match LeaderTab /\t/
+配置完成然后你去打开C文件就能看到tab分割线了，ctermfg可以随意设置颜色
