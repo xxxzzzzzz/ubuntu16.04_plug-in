@@ -147,4 +147,5 @@ highlight CursorLine    cterm=NONE ctermbg=black
 			vmap V <Plug>(expand_region_shrink)
 然后打开C代码 按下小写v开始用上下左右键选择区域，然后按一下y就可以复制你选择的区域，然后你再找合适的区域按p粘贴
 
-
+5.9解决vim移动光标靠键盘的问题，我现在使vim移动光标靠鼠标
+在vimrc里面最后一行增加 set mouse=a
