@@ -188,3 +188,8 @@ set lcs=tab:\|\ ,nbsp:%
 highlight LeaderTab  ctermfg=238
 match LeaderTab /\t/
 配置完成然后你去打开C文件就能看到tab分割线了，ctermfg可以随意设置颜色
+
+5.12 VIM增加行号的颜色特征
+进入vimrc  
+设置highlight LineNr cterm=bold ctermfg=244
+    highlight LineNr cterm=bold ctermbg=236 
