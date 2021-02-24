@@ -197,3 +197,8 @@ match LeaderTab /\t/
 进入vimrc  
 设置highlight LineNr cterm=bold ctermfg=244
     highlight LineNr cterm=bold ctermbg=236 
+    
+ nmap 修改vim快捷键
+ 比如我想让b键回退功能，变成q键来操作，在vimrc最后几行加入:
+ nmap q b 
+ 这样就成功了，b键功能映射到q键了，q就具备b键功能
